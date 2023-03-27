@@ -1,0 +1,27 @@
+<?php
+
+use JetBrains\PhpStorm\NoReturn;
+
+final class SigninController{
+
+    public function defaultAction() : void{
+        View::show("signin/form");
+    }
+
+    public function connectAction(Array $A_parameters = null, Array $A_postParams = null): void{
+        $A_status = Login::isUser($A_postParams);
+        switch ($A_status['status']){
+            case 'User':
+                Session::start($A_status);
+                header('Location: /download');
+                break;
+            case 'Admin':
+                Session::start($A_status);
+                header('Location: /signup');
+                break;
+            default :
+                self::defaultAction();
+                break;
+        }
+    }
+}
