@@ -17,7 +17,7 @@ final class SigninController{
                 break;
             case 'Admin':
                 Session::start($A_status);
-                header('Location: /signup');
+                header('Location: /allquestionreponse');
                 break;
             default :
                 self::defaultAction();

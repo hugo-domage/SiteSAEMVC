@@ -16,7 +16,7 @@ abstract class Model{
             return false;
         }
         $P_db = Connection::initConnection();
-        $S_stmnt = "DELETE FROM ".get_called_class()." WHERE ID = ? ";
+        $S_stmnt = "DELETE FROM questionreponse WHERE ID = ? ";
         $P_sth = $P_db->prepare($S_stmnt);
         $B_state = $P_sth->execute(array($S_id));
         $P_db = null;
@@ -52,7 +52,7 @@ abstract class Model{
 
     public static function selectAll(): array{
         $P_db = Connection::initConnection();
-        $S_stmnt = "SELECT * FROM ".get_called_class();
+        $S_stmnt = "SELECT * FROM questionreponse";
         $P_sth = $P_db->prepare($S_stmnt);
         $P_sth->execute();
         $P_db = null;
