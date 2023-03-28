@@ -52,7 +52,7 @@ abstract class Model{
 
     public static function selectAll(): array{
         $P_db = Connection::initConnection();
-        $S_stmnt = "SELECT * FROM questionreponse";
+        $S_stmnt = "SELECT * FROM questionreponse ORDER BY id desc";
         $P_sth = $P_db->prepare($S_stmnt);
         $P_sth->execute();
         $P_db = null;

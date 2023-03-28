@@ -1,4 +1,5 @@
 <h3>Questions et réponses</h3>
+<label><a href="/addquestionreponse"><b>Ajouter une question</b></a></label>
 <table>
     <thead>
     <tr>
