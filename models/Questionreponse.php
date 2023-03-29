@@ -28,20 +28,18 @@ public static function addQuestionreponse(array $A_postParams) :string{
     return $B_flag ? "La question à été ajouté avec succès" : "Erreur dans l'ajout de la question";
 }
 
-/*
-    public static function UpdateQusetionReponse(array $A_postParams): bool {
-        $A_IdQuestion = intval($A_postParams['id']);
 
-        $A_paramRecipe = array('id' => $A_postParams['id'], 'type_question' => $A_postParams['type_question'], 'qcm' => $A_postParams['qcm'],
-            'question' => $A_postParams['question'], 'reponse' => $A_postParams['reponse'], 'emailadm'=> $A_postParams['emailadm'],
-            'date_maj'=>$A_postParams['date_maj']);
-
-        $B_flag = self::updateById($A_paramRecipe,$A_IdQuestion);
-
-    else{
-return false;
-}
-return $B_flag;
-}
-*/
+    public static function updateQuestionreponse(array $A_postParams): string {
+        $P_db = Connection::initConnection();
+        $S_sql = "UPDATE questionreponse SET type_question = :difficulty, qcm = :qcm, question = :question, reponse = :reponse, date_maj = :date_maj WHERE id = :id";
+        $P_sth = $P_db->prepare($S_sql);
+        $P_sth->bindValue(':difficulty', $A_postParams['difficulty'],PDO::PARAM_STR);
+        $P_sth->bindValue(':qcm', $A_postParams['qcm'],PDO::PARAM_STR);
+        $P_sth->bindValue(':question', $A_postParams['question'],PDO::PARAM_STR);
+        $P_sth->bindValue(':reponse',$A_postParams['reponse'],PDO::PARAM_STR);
+        $P_sth->bindValue(':date_maj', 'now()');
+        $P_sth->bindValue(':id', $A_postParams['id'],PDO::PARAM_INT);
+        $B_flag = $P_sth -> execute();
+        return $B_flag ? "La question à été modifiée avec succès" : "Erreur dans l'ajout de la question";
+    }
 }

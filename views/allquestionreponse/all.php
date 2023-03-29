@@ -18,8 +18,8 @@
             <td><?= $question['reponse']?></td>
             <td><?= $question['qcm']?></td>
             <td><?= $question['type_question']?></td>
-            <td><a href="" class="Dbutton">Delete</a></td>
-            <td><a href="" class="Ubutton">update</a></td>
+            <td><a href="/deletequestionreponse/delete/<?= $question['id']?>" class="Dbutton">Delete</a></td>
+            <td><a href="/updatequestionreponse/display/<?= $question['id']?>" class="Ubutton">update</a></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
