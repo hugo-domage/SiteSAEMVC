@@ -10,7 +10,7 @@ final class SigninController{
 
     public function connectAction(Array $A_parameters = null, Array $A_postParams = null): void{
         $A_status = Login::isUser($A_postParams);
-        switch ($A_status['status']){
+        switch ($A_status['usertype']){
             case 'User':
                 Session::start($A_status);
                 header('Location: /download');

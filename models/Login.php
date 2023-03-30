@@ -6,7 +6,7 @@ class Login extends Model{
         $A_user = self::selectByEmail($S_email);
         $S_password = hash('sha512', $A_getParams['password']);
         if ($A_user && $A_user['password']== $S_password) {
-            return array('email' => $S_email, 'status' => $A_user['usertype']);
+            return array('email' => $S_email, 'usertype' => $A_user['usertype']);
         }
         return null;
     }

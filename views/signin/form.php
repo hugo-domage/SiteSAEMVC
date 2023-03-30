@@ -1,8 +1,10 @@
-<form class='signin 'action="/signin/connect" method="post">
-    <h2>LOGIN</h2>
-    <label>Email</label>
-    <input type="email" name="email" placeholder="Email" required><br>
-    <label>Password</label>
-    <input type="password" name="password" placeholder="Password" required><br>
-    <button type="submit">Login</button>
-</form>
+<body class="form-body">
+    <form class='form-form' action="/signin/connect" method="post">
+        <h2 class="form-title">LOGIN</h2>
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" name="email" placeholder="Email" required><br>
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" name="password" placeholder="Password" required><br>
+        <button class="form-button" type="submit">Login</button>
+    </form>
+</body>

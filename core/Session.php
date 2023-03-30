@@ -8,7 +8,7 @@ final class Session
     }
 
     public static function check():bool {
-        return (isset($_SESSION['id']) && isset($_SESSION['status']));
+        return (isset($_SESSION['email']) && isset($_SESSION['usertype']));
     }
 
     public static function getSession(): ?array {
