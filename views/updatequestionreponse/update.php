@@ -2,6 +2,8 @@
 echo('<h3> Modifier les Questions et les Réponses </h3>
                 
                 <form method="post" action="/updatequestionreponse/update" enctype="multipart/form-data">
+                
+                        <input type="hidden" name="id" class="form-control" value="'. $A_view['id'] .'" placeholder="Difficulty" />
                         <label> Difficulty of the question (F, M, D) : </label>
                         <input type="text" name="difficulty" class="form-control" value="'. $A_view['type_question'] .'" placeholder="Difficulty"/>
                     

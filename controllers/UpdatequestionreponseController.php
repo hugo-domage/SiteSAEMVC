@@ -6,6 +6,6 @@ final class UpdatequestionreponseController{
 
     public function updateAction(Array $A_parameters = null, Array $A_postParams = null):void{
         Questionreponse::updateQuestionreponse($A_postParams);
-        View::show("updatequestionreponse/update");
+        header('Location : /allquestionreponse');
     }
 }
