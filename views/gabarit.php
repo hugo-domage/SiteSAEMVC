@@ -5,6 +5,10 @@
         <link rel="stylesheet" type="text/css" href="/static/styles/termsofuses.css">
         <link rel="stylesheet" href="/static/styles/sign.css">
         <link rel="stylesheet" href="/static/styles/all.css">
+        <link rel="stylesheet" href="/static/styles/error404.css">
+        <link rel="stylesheet" href="/static/styles/add.css">
+
+        <script type='text/javascript' src='/static/js/error404.js'></script>
         <title> ADMINSAE</title>
     </head>
     <body>

@@ -12,7 +12,7 @@ echo("
             <input type='checkbox' required>
             <a href='/termsofuses'>conditions d'utilisation</a>
           </section>
-          <input class='form-input' type='submit'Register</input>
+          <input class='form-input' type='submit' value='Register'</input>
           <label class='form-label'><a href='/signin'><b>Dejà un compte ?</b></a></label>
         </form>
     </body>

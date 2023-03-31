@@ -1,55 +1,75 @@
 .all-body{
-    background-color: black;
-}
-
-.all-title{
-    color: #fff;
-    text-align: center;
-}
-
-th,td{
-    color: #fff;
-    padding: 15px 20px;
-    border: 1px solid #ddd;
-}
-
-.all-label{
-    color: black;
-}
-
-.all-thead, .all-tr{
-    background-color: gray;
-}
-
-.all-tableau {
-    text-align: center;
-    border: solid white;
-}
-
-.Dbutton{
-    background-color: red;
-}
-
-.Dbutton:hover{
-    background-color: lightcoral;
-}
-
-.Dbutton:active{
-    background-color: lightcoral;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.Ubutton{
-    background-color:   green;
-}
-
-.Ubutton:hover{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: lightgreen;
 }
 
-.Ubutton:active{
-    background-color: lightcoral;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.all-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.all-label {
+    text-align: center;
+}
+
+.all-tableau {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+.all-thead {
+    background-color: #0f5e99;
+    color: white;
+}
+
+.all-tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.all-td {
+    padding: 10px 20px;
+}
+
+.Dbutton {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 6px;
+}
+
+.Ubutton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+    margin: 15px 20px;
+    border-radius: 6px;
+    display: inline-block;
 }

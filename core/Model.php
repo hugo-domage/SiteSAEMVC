@@ -33,8 +33,8 @@ abstract class Model{
 
     public static function selectByEmail($S_email) {
         $P_db = Connection::initConnection();
-        $S_stmnt = "SELECT * FROM ".get_called_class()." WHERE email = ? ";
-        $P_sth = $P_db->prepare($S_stmnt);
+        $S_stmt = "SELECT * FROM ".get_called_class()." WHERE email = ? ";
+        $P_sth = $P_db->prepare($S_stmt);
         $P_sth->execute(array($S_email));
         $A_row = $P_sth->fetch(PDO::FETCH_ASSOC);
         $P_db = null;
@@ -43,8 +43,8 @@ abstract class Model{
 
     public static function selectAll(): array{
         $P_db = Connection::initConnection();
-        $S_stmnt = "SELECT * FROM ".get_called_class()." ORDER BY id desc";
-        $P_sth = $P_db->prepare($S_stmnt);
+        $S_stmt = "SELECT * FROM ".get_called_class()." ORDER BY id desc";
+        $P_sth = $P_db->prepare($S_stmt);
         $P_sth->execute();
         $P_db = null;
         return $P_sth->fetchAll();

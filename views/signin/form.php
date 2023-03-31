@@ -5,6 +5,6 @@
         <input class="form-input" type="email" name="email" placeholder="Email" required><br>
         <label class="form-label">Password</label>
         <input class="form-input" type="password" name="password" placeholder="Password" required><br>
-        <button class="form-button" type="submit">Login</button>
+        <input class='form-input' type='submit' value='Login'</input>
     </form>
 </body>

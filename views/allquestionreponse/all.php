@@ -1,6 +1,6 @@
 <body class="all-body">
     <h3 class="all-title">Questions et réponses</h3>
-    <label class="all-label"><a href="/addquestionreponse"><b>Ajouter une question</b></a></label>
+    <a href="/addquestionreponse">Ajouter une question</a>
     <table class="all-tableau">
         <thead class="all-thead">
         <tr class="all-tr">
