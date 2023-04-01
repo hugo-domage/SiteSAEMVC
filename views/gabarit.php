@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/static/styles/all.css">
         <link rel="stylesheet" href="/static/styles/error404.css">
         <link rel="stylesheet" href="/static/styles/add.css">
+        <link rel="stylesheet" href="/static/styles/update.css">
 
         <script type='text/javascript' src='/static/js/error404.js'></script>
         <title> ADMINSAE</title>

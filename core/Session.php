@@ -4,7 +4,7 @@ final class Session
 
     public static function start(Array $A_params):void {
         $_SESSION['email'] = $A_params['email'];
-        $_SESSION['status'] = $A_params['usertype'];
+        $_SESSION['usertype'] = $A_params['usertype'];
     }
 
     public static function check():bool {

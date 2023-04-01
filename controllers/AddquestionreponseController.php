@@ -3,6 +3,10 @@
 final class AddquestionreponseController{
 
     public function defaultAction() : void{
+        if(Session::getSession()['usertype'] != 'Admin') {
+            header("Location: /signin");
+            exit;
+        }
         View::show("addquestionreponse/add");
     }
 
