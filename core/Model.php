@@ -50,5 +50,9 @@ abstract class Model{
         return $P_sth->fetchAll();
     }
 
+    public static function isValid(): void
+    {
+
+    }
 
 }
