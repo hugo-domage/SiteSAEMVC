@@ -23,7 +23,6 @@ public static function addQuestionreponse(array $A_postParams) :string{
     $P_sth->bindValue(':question', $A_postParams['question'],PDO::PARAM_STR);
     $P_sth->bindValue(':reponse', $A_postParams['reponse'],PDO::PARAM_STR);
     $P_sth->bindValue(':date_maj', 'now()');
-    //$P_sth->bindValue(':emailadm', Session::getSession()['emailadm'],PDO::PARAM_STR);
     $B_flag = $P_sth->execute();
     return $B_flag ? "La question à été ajouté avec succès" : "Erreur dans l'ajout de la question";
 }

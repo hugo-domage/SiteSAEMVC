@@ -49,4 +49,10 @@ abstract class Model{
         $P_db = null;
         return $P_sth->fetchAll();
     }
+
+    public static function isValid(): void
+    {
+
+    }
+
 }
