@@ -6,5 +6,6 @@
         <label class="form-label">Password</label>
         <input class="form-input" type="password" name="password" placeholder="Password" required><br>
         <input class='form-input' type='submit' value='Login'</input>
+        <label class='form-label'><a href='/signup'><b>Pas de compte ?</b></a></label>
     </form>
 </body>

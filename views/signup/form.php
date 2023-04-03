@@ -7,6 +7,11 @@ echo("
           <input class='form-input' type='email' name='email' placeholder='Email' required><br>
           <label class='form-label'>Password</label>
           <input class='form-input' type='password' minlength='12' name='password' placeholder='Password' required><br>
+          <p>  Le mot de passe doit être composé de 12 caractères minimum dont : <br>
+               - Une majuscule <br>
+               - Un chiffre <br>  
+               - Un caractère spéciale<br>
+           </p>
           <section id='termsOfUse'>
             <p>J'accepte les termes</p>
             <input type='checkbox' required>
