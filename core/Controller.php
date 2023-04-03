@@ -36,9 +36,9 @@ final class Controller
         }
 
 
-        // on dépile 2 fois de suite depuis le début, c'est à dire qu'on enlève de notre tableau le contrôleur et l'action
+        // on dépile 2 fois de suite depuis le début, c'est-à-dire qu'on enlève de notre tableau le contrôleur et l'action
         // il ne reste donc que les éventuels parametres (si nous en avons)...
-        $this->_A_peeredUrl['controller'] = array_shift($A_urlToPeered); // on recupere le contrôleur
+        $this->_A_peeredUrl['controller'] = array_shift($A_urlToPeered); // on récupère le contrôleur
         $this->_A_peeredUrl['action']     = array_shift($A_urlToPeered); // puis l'action
 
         // ...on stocke ces éventuels parametres dans la variable d'instance qui leur est réservée
