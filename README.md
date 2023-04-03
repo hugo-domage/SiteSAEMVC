@@ -28,11 +28,11 @@ Cette page permet aux utilisateurs d'accéder au lien d'installation du jeu.
 
 La page d'affichage de toutes les questions-réponses permet aux administrateurs de voir toutes les questions-réponses stockées dans la base de données et d'eventuellement en ajouter, en supprimer ou en modifier.
 
-### Page d'Ajout de Questions-Réponses (/allquestionreponse/add)
+### Page d'Ajout de Questions-Réponses (/addquestionreponse)
 
 La page d'ajout de questions-réponses permet aux administrateurs d'ajouter une question et sa réponse en saisissant les informations correspondantes dans un formulaire.
 
-### Page de Modification de Questions-Réponses (/allquestionreponse/update/:id)
+### Page de Modification de Questions-Réponses (/updatequestionreponse/display/:id)
 
 La page de modification de questions-réponses permet aux administrateurs de modifier une question et sa réponse en saisissant les nouvelles informations correspondantes dans un formulaire et en cliquant sur le bouton "Modifier".
 
